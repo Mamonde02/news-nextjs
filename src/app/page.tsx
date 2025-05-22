@@ -1,18 +1,12 @@
 export const dynamic = "force-dynamic";
 
 import { fetchTopHeadlines } from "./lib/news";
-import { NewsArticle } from "./lib/news";
+import { NewsArticle, PageProps } from "./types";
 import ArticleCard from "./components/ArticleCard";
 import SearchBar from "./components/SearchBar";
 import CategoryFilter from "./components/CategoryFilter";
 
 
-interface PageProps {
-  searchParams?: {
-    category?: string;
-    q?: string;
-  };
-}
 
 export default async function Home({ searchParams }: PageProps) {
   // const category = searchParams?.category ?? "";
