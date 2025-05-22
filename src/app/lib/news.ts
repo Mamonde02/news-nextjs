@@ -1,11 +1,6 @@
 import axios from "axios";
+import { NewsArticle } from "../types";
 
-export interface NewsArticle {
-    title: string;
-    description: string;
-    url: string;
-    urlToImage?: string;
-}
 
 export async function fetchTopHeadlines(category?: string, query?: string): Promise<NewsArticle[]> {
     const params: Record<string, string> = {
