@@ -3,6 +3,7 @@
 :root {
   --background: #f9f9f9;
   --foreground: #18181b;
+  /* --foreground: #f9f9f9; */
   --accent: #2563eb;
   --border: #e5e7eb;
 }
@@ -14,14 +15,14 @@
   --font-mono: var(--font-geist-mono, 'Fira Mono', monospace);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #18181b;
     --foreground: #f3f4f6;
     --accent: #60a5fa;
     --border: #27272a;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -79,9 +80,9 @@ h6 {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card {
     background: #232326;
     border-color: var(--border);
   }
-}
+} */
