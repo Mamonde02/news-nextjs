@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: PageProps) {
 
   return (
     <main className="p-4 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-6">News Headlines</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 text-indigo-600">News Headlines</h1>
 
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
         <SearchBar />
