@@ -9,14 +9,15 @@ import CategoryFilter from "./components/CategoryFilter";
 
 
 export default async function Home({ searchParams }: PageProps) {
-  // const category = searchParams?.category ?? "";
-  // const query = searchParams?.q ?? "";
-  const actualParams = await searchParams; // fix await server crash
-  console.log("type::", typeof actualParams);
+  const category = searchParams?.category ?? "";
+  const query = searchParams?.q ?? "";
 
 
-  const category = actualParams?.category ?? "";
-  const query = actualParams?.q ?? "";
+  // const actualParams = await searchParams; // fix await server crash
+  // console.log("type::", typeof actualParams);
+
+  // const category = actualParams?.category ?? "";
+  // const query = actualParams?.q ?? "";
 
   let articles: NewsArticle[] = [];
 
