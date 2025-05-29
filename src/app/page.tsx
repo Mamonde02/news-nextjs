@@ -8,7 +8,9 @@ import CategoryFilter from "./components/CategoryFilter";
 
 
 
-export default async function Home({ searchParams }: PageProps) {
+export default async function Home({ searchParams }: {
+  searchParams?: { category?: string; q?: string };
+}) {
   const category = searchParams?.category ?? "";
   const query = searchParams?.q ?? "";
 
