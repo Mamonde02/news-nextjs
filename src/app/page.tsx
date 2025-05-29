@@ -8,11 +8,12 @@ import CategoryFilter from "./components/CategoryFilter";
 
 
 
-export default async function Home({ searchParams }: {
-  searchParams?: { category?: string; q?: string };
-}) {
-  const category = searchParams?.category ?? "";
-  const query = searchParams?.q ?? "";
+export default async function Home({ searchParams }: PageProps) {
+  // const category = searchParams?.category ?? "";
+  // const query = searchParams?.q ?? "";
+
+  const category = typeof searchParams?.category === "string" ? searchParams.category : "";
+  const query = typeof searchParams?.q === "string" ? searchParams.q : "";
 
 
   // const actualParams = await searchParams; // fix await server crash
