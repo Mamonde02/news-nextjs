@@ -1,4 +1,11 @@
-export default function ArticleCard({ article }: { article: any }) {
+interface Article {
+    title: string;
+    description: string;
+    url: string;
+    urlToImage?: string;
+}
+
+export default function ArticleCard({ article }: { article: Article }) {
     return (
         <div className="bg-white shadow rounded-lg overflow-hidden hover:shadow-xl transition">
             {article.urlToImage && (
