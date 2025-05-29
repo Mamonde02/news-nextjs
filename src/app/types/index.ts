@@ -6,8 +6,5 @@ export interface NewsArticle {
 }
 
 export interface PageProps {
-    searchParams?: {
-        category?: string;
-        q?: string;
-    };
+    searchParams?: Record<string, string | string[] | undefined>;
 }
